@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --light-bg-color: #ffff;
+  --dark-bg-color: #1a1b1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--light-bg-color);
+  color: #000;
+}
+
+.body-active {
+  background-color: var(--dark-bg-color);
+  color: var(--light-bg-color);
+}
+
+.social-icon {
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  height: 70px;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #000;
+}
+
+@media screen and (max-width: 785px) {
+  .mail {
+    font-size: 0.7rem;
+  }
+}
+
+.navbar {
+  background-color: #000;
+  color: var(--light-bg-color);
+  position: relative;
+  z-index: 999;
+}
+
+.nav-link {
+  color: var(--light-bg-color);
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.carousel-container {
+  height: 600px;
+  position: relative;
+}
+
+.carousel-inner {
+  height: auto;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-caption {
+  font-size: 5rem;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  color: var(--light-bg-color);
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  bottom: 0;
+  text-transform: capitalize;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    font-size: 3rem;
+  }
+}
+
+.carousel-item > img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-container button {
+  background-color: #ffc107;
+  height: 20px;
+  width: auto;
+  padding: 20px 10px;
+  position: absolute;
+  top: 50%;
+  z-index: 7;
+}
+
+.empowerment-img {
+  height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.nav-tabs {
+  display: flex;
+}
+.nav-item {
+  flex: 1 0 auto;
+}
+
+.nav-tabs .nav-link {
+  width: 100%;
+}
+
+.nav-link .active {
+  color: blue;
+}
+
+/* third section */
+
+.about-parent {
+  border: 1px solid var(--dark-bg-color);
+  height: auto;
+  padding: 30px;
+}
+
+/* internship section */
+
+.internship-img-container {
+  min-height: 400px;
+  width: 100%;
+  background-image: url("./images/volunteer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.internship-wrapper {
+  /* position: absolute;
+  z-index: 10; */
+  min-height: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+@media screen and (max-width: 950px) {
+  .internship-img-container {
+    height: auto;
+  }
+
+  .internship-wrapper {
+    height: auto;
+  }
+}
+
+.internship-img-container h2 {
+  color: var(--light-bg-color);
+  font-size: 3rem;
+  font-weight: 900;
+  word-spacing: 10px;
+}
+
+.internship-img-container h5 {
+  font-size: 2rem;
+  color: var(--light-bg-color);
+  padding: 0px 20px;
+  word-spacing: 5px;
+}
+
+.internship-img-container p {
+  color: var(--light-bg-color);
+  padding: 10px 30px;
+}
+
+/* volunteers section */
+
+.volunteers-section {
+  height: auto;
+  background-image: url("./images/facts.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.back-cover {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.box {
+  height: 300px;
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    height: auto;
+    padding: 20px 0px;
+  }
+}
+
+/* events */
+
+.event-wrapper {
+  /* background-color: var(--light-bg-color);
+  color: var(--dark-bg-color); */
+}
+.event-images {
+  height: auto;
+}
+
+.event-images img {
+  object-fit: contain;
+}
+
+/* swapper section */
+
+.testimonials-wrapper {
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.team-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* flip card css */
+
+.box {
+  text-align: center;
+
+  height: 270px;
+  width: 270px;
+}
+
+.box:hover > .box-content {
+  transform: rotateY(180deg);
+}
+
+.box-front,
+.box-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.box-content {
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1500ms;
+  position: relative;
+  border: 1px solid var(--light-bg-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ffc107;
+}
+
+.box-front img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.box-back {
+  background-color: var(--dark-bg-color);
+  transform: rotateY(180deg);
+  color: var(--light-bg-color);
+}
+
+/* flip card end */
+
+/* Collaborative*/
+
+.Collaborative-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.Collaborative-img {
+  height: 200px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  background-color: whitesmoke;
+  padding: 15px 0px;
+}
+
+.card-swipper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Collaborative-img img {
+  height: 100%;
+  width: 100%;
+}
+/* second-testimonials */
+
+.mySwiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-testimonials .swiper-slide {
+  background-image: linear-gradient(to left, #ffc107, #ffc107);
+  border-radius: 10px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .second-testimonials .swiper-slide {
+    width: 200px;
+  }
+}
+
+.swiper-slide .card {
+  height: 100%;
+}
+
+.img-container {
+  height: 80px;
+  width: 70px;
+  object-fit: contain;
+}
+
+/* footer */
+
+.footer-wrapper {
+  height: auto;
+  padding: 30px 0px;
+  background: #000;
+}
+
+.first-footer-col {
+  color: var(--light-bg-color);
+}
+
+.footer-link-container li {
+  list-style-type: none;
+}
+
+.footer-wrapper li::marker {
+  content: " > ";
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--light-bg-color);
+}
+
+.footer-link-container li a {
+  color: var(--light-bg-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+hr {
+  color: var(--light-bg-color);
+}
+
+/* impactful-internship-wrapper (internship page) */
+
+.impactful-internship-wrapper {
+  margin-top: 7rem;
+}
+
+.impactful-internship-wrapper h2 {
+  font-size: 4rem;
+}
+
+.impactful-internship-img {
+  height: 350px;
+  width: 100%;
+  background-color: #ffc107;
+}
+
+.impactful-internship-img img {
+  width: 100%;
+  transform: translate(20px, 20px);
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .impactful-internship-img {
+    background-color: none;
+  }
+
+  .impactful-internship-img img {
+    transform: translate(0%, 0%);
+  }
+}
+
+.h3 {
+  font-size: 2.5rem;
+}
+.intern-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intern-container figure {
+  height: 70px;
+  width: 70px;
+  /* background-color: red; */
+  border-radius: 50%;
+}
+
+.gif-icons {
+  height: 80px;
+  width: 80px;
+  margin: 0px auto;
+}
+
+.fa-brands,
+.fa-regular {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .fa-brands,
+  .fa-regular {
+    font-size: 1.8rem;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fa-brands {
+    display: none;
+  }
+}
+
+.fa-brands:hover {
+  color: #ffc107;
+}
+
+.intern-container figure img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border: 2px solid #ffc107;
+}
+
+.mentorship-img {
+  height: 500px;
+}
+
+.mentorship-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.soumya-sharma-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  padding: 2px;
+}
+
+.soumya-sharma-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.join-inner-container {
+  display: flex;
+  gap: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-img-container {
+  background-color: yellowgreen;
+  border: 1px solid black;
+  border-radius: 50%;
+  flex: 0 0 65px;
+}
+
+@media screen and (max-width: 768px) {
+  .join-inner-container {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.profile-img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.join-today {
+  height: auto;
+  border: 2px solid black;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+/* help hero img */
+
+.help-img-container {
+  background-image: url("./images/Donation.jpg");
+}
+
+.help-img-container,
+.gallery-img-container,
+.contact-img-container {
+  position: relative;
+  height: 70vh;
+  border: 1px solid black;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.gallery-img-container {
+  background-image: url("./images/Suvidha-event.jpg");
+}
+
+.help-cover,
+.contact-cover {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery-images {
+  height: auto;
+  width: 100%;
+}
+
+.gallery-images img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* contact section */
+
+.contact-img-container {
+  background-image: url("./images/page-header.jpg");
+}
+
+.get-in-touch-img-container {
+  height: 70vh;
+  background-image: url("./images/Donation.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px var(--dark-bg-color));
+}
